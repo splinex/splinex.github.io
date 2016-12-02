@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IOSRTMPStreamManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/IOSRTMPStreamManager" class="dashAnchor"></a>
+    <a title="IOSRTMPStreamManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PlayerSDK Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PlayerSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        IOSRTMPStreamManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AudioTransmitter.html">AudioTransmitter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IOSFacebookUploadPhotoManager.html">IOSFacebookUploadPhotoManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IOSRTMPStreamManager.html">IOSRTMPStreamManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IOSYoutubeError.html">IOSYoutubeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PlayerSDK360_PlayerView.html">PlayerSDK360_PlayerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PlayerSDK360_Utils.html">PlayerSDK360_Utils</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PlayerSDK360_VideoEditor.html">PlayerSDK360_VideoEditor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PlayerSDKVersion.html">PlayerSDKVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SocialShareInfo.html">SocialShareInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/YouTubeStreamInfo.html">YouTubeStreamInfo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@PlayerSDK360_DEFAULT_CAMERA_STATE">PlayerSDK360_DEFAULT_CAMERA_STATE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@PlayerSDK360_DEFAULT_PLAYER_STATE">PlayerSDK360_DEFAULT_PLAYER_STATE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@PlayerSDKVersionNumber">PlayerSDKVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@PlayerSDKVersionString">PlayerSDKVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kFacebookUploadPhotoManagerErrorDomain">kFacebookUploadPhotoManagerErrorDomain</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ATAudioFormat.html">ATAudioFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ATBitsPerChannel.html">ATBitsPerChannel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AudioTransmitterState.html">AudioTransmitterState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CameraStreamQuality.html">CameraStreamQuality</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IOSVideoStreamStatus.html">IOSVideoStreamStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PQS_STATISTICS_STATUS.html">PQS_STATISTICS_STATUS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_AudioState.html">PlayerSDK360_AudioState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_CallbackType.html">PlayerSDK360_CallbackType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_CameraOrientation.html">PlayerSDK360_CameraOrientation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_CameraType.html">PlayerSDK360_CameraType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_ErrorCode.html">PlayerSDK360_ErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_OpenConfigState.html">PlayerSDK360_OpenConfigState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_PlaybackState.html">PlayerSDK360_PlaybackState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_PreviewState.html">PlayerSDK360_PreviewState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_RecorderState.html">PlayerSDK360_RecorderState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_SeekState.html">PlayerSDK360_SeekState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_SnapshotState.html">PlayerSDK360_SnapshotState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_StateCode.html">PlayerSDK360_StateCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_StatisticsType.html">PlayerSDK360_StatisticsType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_TrimVideo.html">PlayerSDK360_TrimVideo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_UploadState.html">PlayerSDK360_UploadState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_VideoAddMetadata.html">PlayerSDK360_VideoAddMetadata</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_VideoConversionState.html">PlayerSDK360_VideoConversionState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_VideoQuality.html">PlayerSDK360_VideoQuality</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_VideoSharingStage.html">PlayerSDK360_VideoSharingStage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RTMPStreamStatus.html">RTMPStreamStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StreamVideoState.html">StreamVideoState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/YoutubeLiveBroadcastPrivacyStatus.html">YoutubeLiveBroadcastPrivacyStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/YoutubeLiveBroadcastStatus.html">YoutubeLiveBroadcastStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/YoutubeLiveStreamResolution.html">YoutubeLiveStreamResolution</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/YoutubeLiveStreamStatus.html">YoutubeLiveStreamStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/YoutubeStreamHealthStatus.html">YoutubeStreamHealthStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kFacebookUploadPhotoManagerErrorCode.html">kFacebookUploadPhotoManagerErrorCode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AudioTransmitterDelegate.html">AudioTransmitterDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IOSRTMPStreamManagerDelegate.html">IOSRTMPStreamManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)PlayerSDK360_CallbackProtocol">PlayerSDK360_CallbackProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PlayerSDK360_PlaybackDelegate.html">PlayerSDK360_PlaybackDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PlayerSDK360_RecorderDelegate.html">PlayerSDK360_RecorderDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PlayerSDK360_SharingDelegate.html">PlayerSDK360_SharingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PlayerSDK360_SnapshotsDelegate.html">PlayerSDK360_SnapshotsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PlayerSDK360_VideoEditorDelegate.html">PlayerSDK360_VideoEditorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PlayerViewStreamDelegate.html">PlayerViewStreamDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions/AudioSettings.html">AudioSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:IOSFacebookUploadPhotoManager.h@T@FacebookUploadPhotoManagerCompletionHandler">FacebookUploadPhotoManagerCompletionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:IOSFacebookUploadPhotoManager.h@T@FacebookUploadPhotoManagerProgressHandler">FacebookUploadPhotoManagerProgressHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions/PlayerSDK360_CameraState.html">PlayerSDK360_CameraState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions/PlayerSDK360_PlayerState.html">PlayerSDK360_PlayerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions/PlayerSDK360_Quaternion.html">PlayerSDK360_Quaternion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions/PlayerSDK360_Vector3D.html">PlayerSDK360_Vector3D</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions/PlayerSDK360_Viewport.html">PlayerSDK360_Viewport</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@DefaultAudioSettings">DefaultAudioSettings</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AudioSettings.html">AudioSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PlayerSDK360_CameraState.html">PlayerSDK360_CameraState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PlayerSDK360_PlayerState.html">PlayerSDK360_PlayerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PlayerSDK360_Quaternion.html">PlayerSDK360_Quaternion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PlayerSDK360_Vector3D.html">PlayerSDK360_Vector3D</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PlayerSDK360_Viewport.html">PlayerSDK360_Viewport</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>IOSRTMPStreamManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">IOSRTMPStreamManager</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Unavailable"></a>
+                <a name="//apple_ref/objc/Section/Unavailable" class="dashAnchor"></a>
+                <a href="#/Unavailable">
+                  <h3 class="section-name">Unavailable</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(im)init">-init</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(cm)new"></a>
+                    <a name="//apple_ref/objc/Method/+new" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(cm)new">+new</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span> <span class="n">new</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Init"></a>
+                <a name="//apple_ref/objc/Section/Init" class="dashAnchor"></a>
+                <a href="#/Init">
+                  <h3 class="section-name">Init</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(im)initWithPlayer:refreshToken:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithPlayer:refreshToken:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(im)initWithPlayer:refreshToken:">-initWithPlayer:refreshToken:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithPlayer</span><span class="p">:(</span><span class="n"><a href="../Classes/PlayerSDK360_PlayerView.html">PlayerSDK360_PlayerView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">player</span>
+                  <span class="nf">refreshToken</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">refreshToken</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">player</span><span class="p">:</span> <span class="kt"><a href="../Classes/PlayerSDK360_PlayerView.html">PlayerSDK360_PlayerView</a></span><span class="o">!</span><span class="p">,</span> <span class="nv">refreshToken</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>player</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Player.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>refreshToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Youtube refresh token.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Stream manager.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(im)initWithPlayer:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithPlayer:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(im)initWithPlayer:">-initWithPlayer:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Init stream manager for RTMP streaming.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithPlayer</span><span class="p">:(</span><span class="n"><a href="../Classes/PlayerSDK360_PlayerView.html">PlayerSDK360_PlayerView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">player</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">player</span><span class="p">:</span> <span class="kt"><a href="../Classes/PlayerSDK360_PlayerView.html">PlayerSDK360_PlayerView</a></span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>player</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Player.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Stream manager.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/objc/Section/Properties" class="dashAnchor"></a>
+                <a href="#/Properties">
+                  <h3 class="section-name">Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(py)delegate"></a>
+                    <a name="//apple_ref/objc/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(py)delegate">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">NSObject</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/IOSRTMPStreamManagerDelegate.html">IOSRTMPStreamManagerDelegate</a></span><span class="o">&gt;</span> <span class="o">*</span><span class="n">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/IOSRTMPStreamManagerDelegate.html">IOSRTMPStreamManagerDelegate</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(py)youtubeShareUrl"></a>
+                    <a name="//apple_ref/objc/Property/youtubeShareUrl" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(py)youtubeShareUrl">youtubeShareUrl</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Youtube stream url available after transition to live status.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">youtubeShareUrl</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">youtubeShareUrl</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(py)streamStatus"></a>
+                    <a name="//apple_ref/objc/Property/streamStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(py)streamStatus">streamStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stream status.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n"><a href="../Enums/RTMPStreamStatus.html">RTMPStreamStatus</a></span> <span class="n">streamStatus</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">streamStatus</span><span class="p">:</span> <span class="kt"><a href="../Enums/RTMPStreamStatus.html">RTMPStreamStatus</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(py)hasLostConnectionIssue"></a>
+                    <a name="//apple_ref/objc/Property/hasLostConnectionIssue" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(py)hasLostConnectionIssue">hasLostConnectionIssue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This propery indicates the stream was finished by reason of lost conneciton.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">hasLostConnectionIssue</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">hasLostConnectionIssue</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Reuse%20YouTube%20broadcast"></a>
+                <a name="//apple_ref/objc/Section/Reuse YouTube broadcast" class="dashAnchor"></a>
+                <a href="#/Reuse%20YouTube%20broadcast">
+                  <h3 class="section-name">Reuse YouTube broadcast</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(im)canReuseLastBroadcastCompletionHandler:"></a>
+                    <a name="//apple_ref/objc/Method/-canReuseLastBroadcastCompletionHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(im)canReuseLastBroadcastCompletionHandler:">-canReuseLastBroadcastCompletionHandler:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">canReuseLastBroadcastCompletionHandler</span><span class="p">:</span>
+    <span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">))</span><span class="nv">completionHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">canReuseLastBroadcastCompletionHandler</span><span class="p">(</span><span class="n">_</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(im)reuseLastBroadcastWithInput:"></a>
+                    <a name="//apple_ref/objc/Method/-reuseLastBroadcastWithInput:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(im)reuseLastBroadcastWithInput:">-reuseLastBroadcastWithInput:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Begin streaming from last live broadcast, need check can reuse before calling this method.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">reuseLastBroadcastWithInput</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">input</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">reuseLastBroadcast</span><span class="p">(</span><span class="n">withInput</span> <span class="nv">input</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>input</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Camera input url.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Stream%20to%20YouTube"></a>
+                <a name="//apple_ref/objc/Section/Stream to YouTube" class="dashAnchor"></a>
+                <a href="#/Stream%20to%20YouTube">
+                  <h3 class="section-name">Stream to YouTube</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(im)beginStream360ToYoutubeFromInput:youTubeStreamInfo:isPanoramic:"></a>
+                    <a name="//apple_ref/objc/Method/-beginStream360ToYoutubeFromInput:youTubeStreamInfo:isPanoramic:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(im)beginStream360ToYoutubeFromInput:youTubeStreamInfo:isPanoramic:">-beginStream360ToYoutubeFromInput:youTubeStreamInfo:isPanoramic:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">beginStream360ToYoutubeFromInput</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">input</span>
+                       <span class="nf">youTubeStreamInfo</span><span class="p">:(</span><span class="n"><a href="../Classes/YouTubeStreamInfo.html">YouTubeStreamInfo</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">youTubeStreamInfo</span>
+                             <span class="nf">isPanoramic</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">isPanoramic</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">beginStream360ToYoutube</span><span class="p">(</span><span class="n">fromInput</span> <span class="nv">input</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">youTubeStreamInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/YouTubeStreamInfo.html">YouTubeStreamInfo</a></span><span class="o">!</span><span class="p">,</span> <span class="nv">isPanoramic</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>input</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Camera input url.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Youtube broadcast title.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>description</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Youtube description title.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>privacyStatus</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Youtube broadcast privacy status.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resolution</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Youtube stream resolution.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isPanoramic</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Stream in panoramic mode.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(im)beginStream360ToYoutubeFromInput:youTubeStreamInfo:isMainBroadcast:isPanoramic:"></a>
+                    <a name="//apple_ref/objc/Method/-beginStream360ToYoutubeFromInput:youTubeStreamInfo:isMainBroadcast:isPanoramic:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(im)beginStream360ToYoutubeFromInput:youTubeStreamInfo:isMainBroadcast:isPanoramic:">-beginStream360ToYoutubeFromInput:youTubeStreamInfo:isMainBroadcast:isPanoramic:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Begin streaming in 360 to YouTube.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">beginStream360ToYoutubeFromInput</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">input</span>
+                       <span class="nf">youTubeStreamInfo</span><span class="p">:(</span><span class="n"><a href="../Classes/YouTubeStreamInfo.html">YouTubeStreamInfo</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">youTubeStreamInfo</span>
+                         <span class="nf">isMainBroadcast</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">isMainBroadcast</span>
+                             <span class="nf">isPanoramic</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">isPanoramic</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">beginStream360ToYoutube</span><span class="p">(</span><span class="n">fromInput</span> <span class="nv">input</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">youTubeStreamInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/YouTubeStreamInfo.html">YouTubeStreamInfo</a></span><span class="o">!</span><span class="p">,</span> <span class="nv">isMainBroadcast</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">isPanoramic</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>input</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Camera input url.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Youtube broadcast title.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>description</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Youtube description title.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>privacyStatus</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Youtube broadcast privacy status.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resolution</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Youtube stream resolution.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isMainBroadcast</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Stream on Main broadcast.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isPanoramic</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Stream in panoramic mode.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Stream%20to%20RTMP"></a>
+                <a name="//apple_ref/objc/Section/Stream to RTMP" class="dashAnchor"></a>
+                <a href="#/Stream%20to%20RTMP">
+                  <h3 class="section-name">Stream to RTMP</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(im)beginStream360FromInput:output:width:height:isPanoramic:"></a>
+                    <a name="//apple_ref/objc/Method/-beginStream360FromInput:output:width:height:isPanoramic:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(im)beginStream360FromInput:output:width:height:isPanoramic:">-beginStream360FromInput:output:width:height:isPanoramic:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">beginStream360FromInput</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">input</span>
+                         <span class="nf">output</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">output</span>
+                          <span class="nf">width</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">width</span>
+                         <span class="nf">height</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">height</span>
+                    <span class="nf">isPanoramic</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">isPanoramic</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">beginStream360</span><span class="p">(</span><span class="n">fromInput</span> <span class="nv">input</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">output</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">isPanoramic</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>input</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Camera input url.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>output</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>RTMP server address.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>width</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Video width.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>width</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Video height.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isPanoramic</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Stream in panoramic mode.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(im)beginStream360FromInput:output:width:height:bitrate:isPanoramic:"></a>
+                    <a name="//apple_ref/objc/Method/-beginStream360FromInput:output:width:height:bitrate:isPanoramic:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(im)beginStream360FromInput:output:width:height:bitrate:isPanoramic:">-beginStream360FromInput:output:width:height:bitrate:isPanoramic:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Begin streaming in 360 to RTMP server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">beginStream360FromInput</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">input</span>
+                         <span class="nf">output</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">output</span>
+                          <span class="nf">width</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">width</span>
+                         <span class="nf">height</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">height</span>
+                        <span class="nf">bitrate</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">bitrate</span>
+                    <span class="nf">isPanoramic</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">isPanoramic</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">beginStream360</span><span class="p">(</span><span class="n">fromInput</span> <span class="nv">input</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">output</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">bitrate</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">isPanoramic</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>input</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Camera input url.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>output</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>RTMP server address.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>width</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Video width.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>width</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Video height.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>width</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Video bitrate.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isPanoramic</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Stream in panoramic mode.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Manage%20stream"></a>
+                <a name="//apple_ref/objc/Section/Manage stream" class="dashAnchor"></a>
+                <a href="#/Manage%20stream">
+                  <h3 class="section-name">Manage stream</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(im)stopStream"></a>
+                    <a name="//apple_ref/objc/Method/-stopStream" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(im)stopStream">-stopStream</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">stopStream</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">stopStream</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>YES if the stream was stopped.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(im)pauseStream"></a>
+                    <a name="//apple_ref/objc/Method/-pauseStream" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(im)pauseStream">-pauseStream</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pause stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">pauseStream</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">pauseStream</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>YES if the stream was paused.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(im)resumeStream"></a>
+                    <a name="//apple_ref/objc/Method/-resumeStream" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(im)resumeStream">-resumeStream</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pause stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">resumeStream</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">resumeStream</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>YES if the stream can be resumed.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Cleanup"></a>
+                <a name="//apple_ref/objc/Section/Cleanup" class="dashAnchor"></a>
+                <a href="#/Cleanup">
+                  <h3 class="section-name">Cleanup</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(im)cleanup"></a>
+                    <a name="//apple_ref/objc/Method/-cleanup" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(im)cleanup">-cleanup</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">cleanup</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">cleanup</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)IOSRTMPStreamManager(im)clearCacheWithCompletionHandler:"></a>
+                    <a name="//apple_ref/objc/Method/-clearCacheWithCompletionHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)IOSRTMPStreamManager(im)clearCacheWithCompletionHandler:">-clearCacheWithCompletionHandler:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Clear manager cache.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">clearCacheWithCompletionHandler</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSError</span> <span class="o">*</span><span class="p">))</span><span class="nv">completionHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">clearCache</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-12-02)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

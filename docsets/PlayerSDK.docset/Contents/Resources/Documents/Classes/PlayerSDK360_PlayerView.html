@@ -1,0 +1,3483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PlayerSDK360_PlayerView Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/PlayerSDK360_PlayerView" class="dashAnchor"></a>
+    <a title="PlayerSDK360_PlayerView Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PlayerSDK Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PlayerSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PlayerSDK360_PlayerView Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AudioTransmitter.html">AudioTransmitter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IOSFacebookUploadPhotoManager.html">IOSFacebookUploadPhotoManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IOSRTMPStreamManager.html">IOSRTMPStreamManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IOSYoutubeError.html">IOSYoutubeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PlayerSDK360_PlayerView.html">PlayerSDK360_PlayerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PlayerSDK360_Utils.html">PlayerSDK360_Utils</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PlayerSDK360_VideoEditor.html">PlayerSDK360_VideoEditor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PlayerSDKVersion.html">PlayerSDKVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SocialShareInfo.html">SocialShareInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/YouTubeStreamInfo.html">YouTubeStreamInfo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@PlayerSDK360_DEFAULT_CAMERA_STATE">PlayerSDK360_DEFAULT_CAMERA_STATE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@PlayerSDK360_DEFAULT_PLAYER_STATE">PlayerSDK360_DEFAULT_PLAYER_STATE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@PlayerSDKVersionNumber">PlayerSDKVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@PlayerSDKVersionString">PlayerSDKVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kFacebookUploadPhotoManagerErrorDomain">kFacebookUploadPhotoManagerErrorDomain</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ATAudioFormat.html">ATAudioFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ATBitsPerChannel.html">ATBitsPerChannel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AudioTransmitterState.html">AudioTransmitterState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CameraStreamQuality.html">CameraStreamQuality</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IOSVideoStreamStatus.html">IOSVideoStreamStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PQS_STATISTICS_STATUS.html">PQS_STATISTICS_STATUS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_AudioState.html">PlayerSDK360_AudioState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_CallbackType.html">PlayerSDK360_CallbackType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_CameraOrientation.html">PlayerSDK360_CameraOrientation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_CameraType.html">PlayerSDK360_CameraType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_ErrorCode.html">PlayerSDK360_ErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_OpenConfigState.html">PlayerSDK360_OpenConfigState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_PlaybackState.html">PlayerSDK360_PlaybackState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_PreviewState.html">PlayerSDK360_PreviewState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_RecorderState.html">PlayerSDK360_RecorderState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_SeekState.html">PlayerSDK360_SeekState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_SnapshotState.html">PlayerSDK360_SnapshotState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_StateCode.html">PlayerSDK360_StateCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_StatisticsType.html">PlayerSDK360_StatisticsType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_TrimVideo.html">PlayerSDK360_TrimVideo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_UploadState.html">PlayerSDK360_UploadState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_VideoAddMetadata.html">PlayerSDK360_VideoAddMetadata</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_VideoConversionState.html">PlayerSDK360_VideoConversionState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_VideoQuality.html">PlayerSDK360_VideoQuality</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerSDK360_VideoSharingStage.html">PlayerSDK360_VideoSharingStage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RTMPStreamStatus.html">RTMPStreamStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StreamVideoState.html">StreamVideoState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/YoutubeLiveBroadcastPrivacyStatus.html">YoutubeLiveBroadcastPrivacyStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/YoutubeLiveBroadcastStatus.html">YoutubeLiveBroadcastStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/YoutubeLiveStreamResolution.html">YoutubeLiveStreamResolution</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/YoutubeLiveStreamStatus.html">YoutubeLiveStreamStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/YoutubeStreamHealthStatus.html">YoutubeStreamHealthStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kFacebookUploadPhotoManagerErrorCode.html">kFacebookUploadPhotoManagerErrorCode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AudioTransmitterDelegate.html">AudioTransmitterDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IOSRTMPStreamManagerDelegate.html">IOSRTMPStreamManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)PlayerSDK360_CallbackProtocol">PlayerSDK360_CallbackProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PlayerSDK360_PlaybackDelegate.html">PlayerSDK360_PlaybackDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PlayerSDK360_RecorderDelegate.html">PlayerSDK360_RecorderDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PlayerSDK360_SharingDelegate.html">PlayerSDK360_SharingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PlayerSDK360_SnapshotsDelegate.html">PlayerSDK360_SnapshotsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PlayerSDK360_VideoEditorDelegate.html">PlayerSDK360_VideoEditorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PlayerViewStreamDelegate.html">PlayerViewStreamDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions/AudioSettings.html">AudioSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:IOSFacebookUploadPhotoManager.h@T@FacebookUploadPhotoManagerCompletionHandler">FacebookUploadPhotoManagerCompletionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:IOSFacebookUploadPhotoManager.h@T@FacebookUploadPhotoManagerProgressHandler">FacebookUploadPhotoManagerProgressHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions/PlayerSDK360_CameraState.html">PlayerSDK360_CameraState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions/PlayerSDK360_PlayerState.html">PlayerSDK360_PlayerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions/PlayerSDK360_Quaternion.html">PlayerSDK360_Quaternion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions/PlayerSDK360_Vector3D.html">PlayerSDK360_Vector3D</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions/PlayerSDK360_Viewport.html">PlayerSDK360_Viewport</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@DefaultAudioSettings">DefaultAudioSettings</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AudioSettings.html">AudioSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PlayerSDK360_CameraState.html">PlayerSDK360_CameraState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PlayerSDK360_PlayerState.html">PlayerSDK360_PlayerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PlayerSDK360_Quaternion.html">PlayerSDK360_Quaternion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PlayerSDK360_Vector3D.html">PlayerSDK360_Vector3D</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PlayerSDK360_Viewport.html">PlayerSDK360_Viewport</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PlayerSDK360_PlayerView</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">PlayerSDK360_PlayerView</span> <span class="p">:</span> <span class="nc">UIView</span> <span class="o">&lt;</span><span class="n"><a href="../Protocols.html#/c:objc(pl)PlayerSDK360_CallbackProtocol">PlayerSDK360_CallbackProtocol</a></span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>Player view class</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Stream%20properties"></a>
+                <a name="//apple_ref/objc/Section/Stream properties" class="dashAnchor"></a>
+                <a href="#/Stream%20properties">
+                  <h3 class="section-name">Stream properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(py)streamDelegate"></a>
+                    <a name="//apple_ref/objc/Property/streamDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(py)streamDelegate">streamDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/PlayerViewStreamDelegate.html">PlayerViewStreamDelegate</a></span><span class="o">&gt;</span> <span class="n">streamDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">streamDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PlayerViewStreamDelegate.html">PlayerViewStreamDelegate</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)streamStatus"></a>
+                    <a name="//apple_ref/objc/Method/-streamStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)streamStatus">-streamStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stream status
+ Return current stream status.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Enums/IOSVideoStreamStatus.html">IOSVideoStreamStatus</a></span><span class="p">)</span><span class="n">streamStatus</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">streamStatus</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/IOSVideoStreamStatus.html">IOSVideoStreamStatus</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Current stream status.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Manage%20stream"></a>
+                <a name="//apple_ref/objc/Section/Manage stream" class="dashAnchor"></a>
+                <a href="#/Manage%20stream">
+                  <h3 class="section-name">Manage stream</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)prepareStream"></a>
+                    <a name="//apple_ref/objc/Method/-prepareStream" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)prepareStream">-prepareStream</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">prepareStream</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">prepareStream</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)prepareStreamFromURL:width:height:"></a>
+                    <a name="//apple_ref/objc/Method/-prepareStreamFromURL:width:height:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)prepareStreamFromURL:width:height:">-prepareStreamFromURL:width:height:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Prepare player to stream with input url and width/height.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">prepareStreamFromURL</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">inputURL</span>
+                       <span class="nf">width</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">width</span>
+                      <span class="nf">height</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">height</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">prepareStream</span><span class="p">(</span><span class="n">fromURL</span> <span class="nv">inputURL</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inputURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Camera input url.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>width</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Stream video width.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>height</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Stream video height.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)prepareStreamFromURL:width:height:isPanoramic:"></a>
+                    <a name="//apple_ref/objc/Method/-prepareStreamFromURL:width:height:isPanoramic:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)prepareStreamFromURL:width:height:isPanoramic:">-prepareStreamFromURL:width:height:isPanoramic:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Prepare player to stream with input url and width/height.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">prepareStreamFromURL</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">inputURL</span>
+                       <span class="nf">width</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">width</span>
+                      <span class="nf">height</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">height</span>
+                 <span class="nf">isPanoramic</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">isPanoramic</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">prepareStream</span><span class="p">(</span><span class="n">fromURL</span> <span class="nv">inputURL</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">isPanoramic</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inputURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Camera input url.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>width</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Stream video width.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>height</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Stream video height.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isPanoramic</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Stream in 360 or not.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)startStreamToURL:width:height:error:"></a>
+                    <a name="//apple_ref/objc/Method/-startStreamToURL:width:height:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)startStreamToURL:width:height:error:">-startStreamToURL:width:height:error:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start stream with output url and width/height and error callback.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">startStreamToURL</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">outputURL</span>
+                   <span class="nf">width</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">width</span>
+                  <span class="nf">height</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">height</span>
+                   <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">startStream</span><span class="p">(</span><span class="n">toURL</span> <span class="nv">outputURL</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">NSErrorPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inputURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>RTMP stream url.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>width</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Stream video width.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>height</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Stream video height.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Error callback.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)startStreamToURLs:width:height:bitrate:error:"></a>
+                    <a name="//apple_ref/objc/Method/-startStreamToURLs:width:height:bitrate:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)startStreamToURLs:width:height:bitrate:error:">-startStreamToURLs:width:height:bitrate:error:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start stream with output urls and width/height and error callback.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">startStreamToURLs</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">outputURLs</span>
+                    <span class="nf">width</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">width</span>
+                   <span class="nf">height</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">height</span>
+                  <span class="nf">bitrate</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">bitrate</span>
+                    <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">startStream</span><span class="p">(</span><span class="n">toURLs</span> <span class="nv">outputURLs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">bitrate</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">NSErrorPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inputURLs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>RTMP stream urls. Select first available rtmp url.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>width</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Stream video width.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>height</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Stream video height.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Error callback.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)startStreamToURLs:width:height:error:"></a>
+                    <a name="//apple_ref/objc/Method/-startStreamToURLs:width:height:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)startStreamToURLs:width:height:error:">-startStreamToURLs:width:height:error:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start stream with output urls and width/height and error callback.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">startStreamToURLs</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">outputURLs</span>
+                    <span class="nf">width</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">width</span>
+                   <span class="nf">height</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">height</span>
+                    <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">startStream</span><span class="p">(</span><span class="n">toURLs</span> <span class="nv">outputURLs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">NSErrorPointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inputURLs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>RTMP stream urls. Select first available rtmp url.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>width</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Stream video width.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>height</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Stream video height.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Error callback.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)stopStream"></a>
+                    <a name="//apple_ref/objc/Method/-stopStream" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)stopStream">-stopStream</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stop stream.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">stopStream</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">stopStream</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)pauseStreamAndStopAudio:"></a>
+                    <a name="//apple_ref/objc/Method/-pauseStreamAndStopAudio:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)pauseStreamAndStopAudio:">-pauseStreamAndStopAudio:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pause stream and pause audio.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">pauseStreamAndStopAudio</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">stopAudio</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">pauseStreamAndStopAudio</span><span class="p">(</span><span class="n">_</span> <span class="nv">stopAudio</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>stopAudio</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If YES pause audio.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)resumeStreamPlayback"></a>
+                    <a name="//apple_ref/objc/Method/-resumeStreamPlayback" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)resumeStreamPlayback">-resumeStreamPlayback</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resume player playback.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">resumeStreamPlayback</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">resumeStreamPlayback</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Playback%20state"></a>
+                <a name="//apple_ref/objc/Section/Playback state" class="dashAnchor"></a>
+                <a href="#/Playback%20state">
+                  <h3 class="section-name">Playback state</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(cm)playbackStateToString:"></a>
+                    <a name="//apple_ref/objc/Method/+playbackStateToString:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(cm)playbackStateToString:">+playbackStateToString:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">playbackStateToString</span><span class="p">:(</span><span class="n"><a href="../Enums/PlayerSDK360_PlaybackState.html">PlayerSDK360_PlaybackState</a></span><span class="p">)</span><span class="nv">state</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">playbackState</span><span class="p">(</span><span class="n">toString</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Enums/PlayerSDK360_PlaybackState.html">PlayerSDK360_PlaybackState</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>state</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Current player playback state.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Player%20properties"></a>
+                <a name="//apple_ref/objc/Section/Player properties" class="dashAnchor"></a>
+                <a href="#/Player%20properties">
+                  <h3 class="section-name">Player properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(py)playbackState"></a>
+                    <a name="//apple_ref/objc/Property/playbackState" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(py)playbackState">playbackState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n"><a href="../Enums/PlayerSDK360_PlaybackState.html">PlayerSDK360_PlaybackState</a></span> <span class="n">playbackState</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">playbackState</span><span class="p">:</span> <span class="kt"><a href="../Enums/PlayerSDK360_PlaybackState.html">PlayerSDK360_PlaybackState</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(py)currentTime"></a>
+                    <a name="//apple_ref/objc/Property/currentTime" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(py)currentTime">currentTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="kt">float</span> <span class="n">currentTime</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">currentTime</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(py)synhronizedCurrentTime"></a>
+                    <a name="//apple_ref/objc/Property/synhronizedCurrentTime" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(py)synhronizedCurrentTime">synhronizedCurrentTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="kt">float</span> <span class="n">synhronizedCurrentTime</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">synhronizedCurrentTime</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(py)duration"></a>
+                    <a name="//apple_ref/objc/Property/duration" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(py)duration">duration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="kt">float</span> <span class="n">duration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(py)readTimeout"></a>
+                    <a name="//apple_ref/objc/Property/readTimeout" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(py)readTimeout">readTimeout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="kt">int</span> <span class="n">readTimeout</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">readTimeout</span><span class="p">:</span> <span class="kt">Int32</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(py)mute"></a>
+                    <a name="//apple_ref/objc/Property/mute" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(py)mute">mute</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="kt">_Bool</span> <span class="n">mute</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">mute</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(py)yawAngle"></a>
+                    <a name="//apple_ref/objc/Property/yawAngle" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(py)yawAngle">yawAngle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Absolute yaw angle for camera in degrees.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">float</span> <span class="n">yawAngle</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">yawAngle</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(py)pitchAngle"></a>
+                    <a name="//apple_ref/objc/Property/pitchAngle" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(py)pitchAngle">pitchAngle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Absolute pitch angle for camera in degrees.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">float</span> <span class="n">pitchAngle</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">pitchAngle</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(py)rollAngle"></a>
+                    <a name="//apple_ref/objc/Property/rollAngle" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(py)rollAngle">rollAngle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Absolute roll angle for camera in degrees.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">float</span> <span class="n">rollAngle</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">rollAngle</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(py)delegate"></a>
+                    <a name="//apple_ref/objc/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(py)delegate">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callback delegate.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols.html#/c:objc(pl)PlayerSDK360_CallbackProtocol">PlayerSDK360_CallbackProtocol</a></span><span class="o">&gt;</span> <span class="n">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/c:objc(pl)PlayerSDK360_CallbackProtocol">PlayerSDK360_CallbackProtocol</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(py)playbackDelegate"></a>
+                    <a name="//apple_ref/objc/Property/playbackDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(py)playbackDelegate">playbackDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/PlayerSDK360_PlaybackDelegate.html">PlayerSDK360_PlaybackDelegate</a></span><span class="o">&gt;</span> <span class="n">playbackDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">playbackDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PlayerSDK360_PlaybackDelegate.html">PlayerSDK360_PlaybackDelegate</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(py)recorderDelegate"></a>
+                    <a name="//apple_ref/objc/Property/recorderDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(py)recorderDelegate">recorderDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/PlayerSDK360_RecorderDelegate.html">PlayerSDK360_RecorderDelegate</a></span><span class="o">&gt;</span> <span class="n">recorderDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">recorderDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PlayerSDK360_RecorderDelegate.html">PlayerSDK360_RecorderDelegate</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(py)snapshotsDelegate"></a>
+                    <a name="//apple_ref/objc/Property/snapshotsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(py)snapshotsDelegate">snapshotsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/PlayerSDK360_SnapshotsDelegate.html">PlayerSDK360_SnapshotsDelegate</a></span><span class="o">&gt;</span>
+    <span class="n">snapshotsDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">snapshotsDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PlayerSDK360_SnapshotsDelegate.html">PlayerSDK360_SnapshotsDelegate</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(py)sharingDelegate"></a>
+                    <a name="//apple_ref/objc/Property/sharingDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(py)sharingDelegate">sharingDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/PlayerSDK360_SharingDelegate.html">PlayerSDK360_SharingDelegate</a></span><span class="o">&gt;</span> <span class="n">sharingDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">sharingDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PlayerSDK360_SharingDelegate.html">PlayerSDK360_SharingDelegate</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Manage%20playback"></a>
+                <a name="//apple_ref/objc/Section/Manage playback" class="dashAnchor"></a>
+                <a href="#/Manage%20playback">
+                  <h3 class="section-name">Manage playback</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)reopen"></a>
+                    <a name="//apple_ref/objc/Method/-reopen" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)reopen">-reopen</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">reopen</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">reopen</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)openImageCircleUrl1:url2:profile:"></a>
+                    <a name="//apple_ref/objc/Method/-openImageCircleUrl1:url2:profile:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)openImageCircleUrl1:url2:profile:">-openImageCircleUrl1:url2:profile:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Play image circle video source.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">_Bool</span><span class="p">)</span><span class="nf">openImageCircleUrl1</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">url1</span>
+                        <span class="nf">url2</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">url2</span>
+                     <span class="nf">profile</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">xmlProfile</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">openImageCircleUrl1</span><span class="p">(</span><span class="n">_</span> <span class="nv">url1</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">url2</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">profile</span> <span class="nv">xmlProfile</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url1</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Url from first sensor.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url2</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Url from second sensor.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>True if the URL is correct, else false.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)openUrl:"></a>
+                    <a name="//apple_ref/objc/Method/-openUrl:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)openUrl:">-openUrl:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Play video source (isEquirectangular=false, autoReconnect = false).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">_Bool</span><span class="p">)</span><span class="nf">openUrl</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">url</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">openUrl</span><span class="p">(</span><span class="n">_</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Url of source.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>True if the URL is correct, else false.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)openUrl:equirectangular:"></a>
+                    <a name="//apple_ref/objc/Method/-openUrl:equirectangular:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)openUrl:equirectangular:">-openUrl:equirectangular:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Play video source (autoReconnect = false).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">_Bool</span><span class="p">)</span><span class="nf">openUrl</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">url</span> <span class="nf">equirectangular</span><span class="p">:(</span><span class="kt">_Bool</span><span class="p">)</span><span class="nv">isEquirectangular</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">openUrl</span><span class="p">(</span><span class="n">_</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">equirectangular</span> <span class="nv">isEquirectangular</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Url of source.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isEquirectangular</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>True if use equirectangular projection.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>True if the URL is correct, else false.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)openUrl:equirectangular:autoReconnect:"></a>
+                    <a name="//apple_ref/objc/Method/-openUrl:equirectangular:autoReconnect:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)openUrl:equirectangular:autoReconnect:">-openUrl:equirectangular:autoReconnect:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Play video source.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">_Bool</span><span class="p">)</span><span class="nf">openUrl</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">url</span>
+    <span class="nf">equirectangular</span><span class="p">:(</span><span class="kt">_Bool</span><span class="p">)</span><span class="nv">isEquirectangular</span>
+      <span class="nf">autoReconnect</span><span class="p">:(</span><span class="kt">_Bool</span><span class="p">)</span><span class="nv">reconnect</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">openUrl</span><span class="p">(</span><span class="n">_</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">equirectangular</span> <span class="nv">isEquirectangular</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">autoReconnect</span> <span class="nv">reconnect</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Url of source.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isEquirectangular</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>True if use equirectangular projection.
+@reconnect
+True if need autoReconnect.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>True if the URL is correct, else false.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)seek:"></a>
+                    <a name="//apple_ref/objc/Method/-seek:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)seek:">-seek:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Seek of selected time.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">seek</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">time</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">seek</span><span class="p">(</span><span class="n">_</span> <span class="nv">time</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)pause"></a>
+                    <a name="//apple_ref/objc/Method/-pause" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)pause">-pause</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Pause playing video.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">pause</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">pause</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)play"></a>
+                    <a name="//apple_ref/objc/Method/-play" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)play">-play</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start playing video after #pause() was called.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">play</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">play</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)stop"></a>
+                    <a name="//apple_ref/objc/Method/-stop" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)stop">-stop</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stop playing video.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">_Bool</span><span class="p">)</span><span class="n">stop</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">stop</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if the video was stopped else false.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Playback%20info"></a>
+                <a name="//apple_ref/objc/Section/Playback info" class="dashAnchor"></a>
+                <a href="#/Playback%20info">
+                  <h3 class="section-name">Playback info</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)getCurrentTime"></a>
+                    <a name="//apple_ref/objc/Method/-getCurrentTime" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)getCurrentTime">-getCurrentTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">getCurrentTime</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">getCurrentTime</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Time from start in seconds, -1 for live videos.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)getDuration"></a>
+                    <a name="//apple_ref/objc/Method/-getDuration" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)getDuration">-getDuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the duration of video in seconds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">getDuration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">getDuration</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>duration of the video in seconds, -1 for live videos.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Sanpshot"></a>
+                <a name="//apple_ref/objc/Section/Sanpshot" class="dashAnchor"></a>
+                <a href="#/Sanpshot">
+                  <h3 class="section-name">Sanpshot</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)takeSnapshot:"></a>
+                    <a name="//apple_ref/objc/Method/-takeSnapshot:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)takeSnapshot:">-takeSnapshot:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">takeSnapshot</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">path</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">takeSnapshot</span><span class="p">(</span><span class="n">_</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Path to snapshot.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Recording"></a>
+                <a name="//apple_ref/objc/Section/Recording" class="dashAnchor"></a>
+                <a href="#/Recording">
+                  <h3 class="section-name">Recording</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)startRecord:"></a>
+                    <a name="//apple_ref/objc/Method/-startRecord:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)startRecord:">-startRecord:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">startRecord</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">path</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">startRecord</span><span class="p">(</span><span class="n">_</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Path to record.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)stopRecord"></a>
+                    <a name="//apple_ref/objc/Method/-stopRecord" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)stopRecord">-stopRecord</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stop recording video and save it.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">stopRecord</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">stopRecord</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)getCurrentRecordTime"></a>
+                    <a name="//apple_ref/objc/Method/-getCurrentRecordTime" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)getCurrentRecordTime">-getCurrentRecordTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get time from start recording.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">getCurrentRecordTime</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">getCurrentRecordTime</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>time from start recording in seconds.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Preview"></a>
+                <a name="//apple_ref/objc/Section/Preview" class="dashAnchor"></a>
+                <a href="#/Preview">
+                  <h3 class="section-name">Preview</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)getPreview"></a>
+                    <a name="//apple_ref/objc/Method/-getPreview" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)getPreview">-getPreview</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">getPreview</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">getPreview</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)setUnwarpPreviewFrame:"></a>
+                    <a name="//apple_ref/objc/Method/-setUnwarpPreviewFrame:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)setUnwarpPreviewFrame:">-setUnwarpPreviewFrame:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set unwarped preview frame.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setUnwarpPreviewFrame</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">frame</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setUnwarpPreviewFrame</span><span class="p">(</span><span class="n">_</span> <span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)showUnwarpPreview"></a>
+                    <a name="//apple_ref/objc/Method/-showUnwarpPreview" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)showUnwarpPreview">-showUnwarpPreview</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Show unwarped preview</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">showUnwarpPreview</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">showUnwarpPreview</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)hideUnwarpPreview"></a>
+                    <a name="//apple_ref/objc/Method/-hideUnwarpPreview" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)hideUnwarpPreview">-hideUnwarpPreview</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hide unwarped preview</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">hideUnwarpPreview</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">hideUnwarpPreview</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)clickInUnwarpPreview:"></a>
+                    <a name="//apple_ref/objc/Method/-clickInUnwarpPreview:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)clickInUnwarpPreview:">-clickInUnwarpPreview:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Click on unwarp preview</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">clickInUnwarpPreview</span><span class="p">:(</span><span class="n">CGPoint</span><span class="p">)</span><span class="nv">point</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">click</span><span class="p">(</span><span class="n">inUnwarpPreview</span> <span class="nv">point</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>point</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Touch point.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Viewport"></a>
+                <a name="//apple_ref/objc/Section/Viewport" class="dashAnchor"></a>
+                <a href="#/Viewport">
+                  <h3 class="section-name">Viewport</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)updateViewport"></a>
+                    <a name="//apple_ref/objc/Method/-updateViewport" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)updateViewport">-updateViewport</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">updateViewport</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">updateViewport</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)setShiftYaw:pitch:roll:"></a>
+                    <a name="//apple_ref/objc/Method/-setShiftYaw:pitch:roll:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)setShiftYaw:pitch:roll:">-setShiftYaw:pitch:roll:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set delta of yaw, pitch and roll angles for camera in degrees.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setShiftYaw</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">yawDelta</span>
+              <span class="nf">pitch</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">pitchDelta</span>
+               <span class="nf">roll</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">rollDelta</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setShiftYaw</span><span class="p">(</span><span class="n">_</span> <span class="nv">yawDelta</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="n">pitch</span> <span class="nv">pitchDelta</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="n">roll</span> <span class="nv">rollDelta</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>yawDelta</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Delta of yaw angle.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pitchDelta</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Delta of pitch angle.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rollDelta</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Delta of roll angle.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)setCameraQuaternionFromX:y:z:w:"></a>
+                    <a name="//apple_ref/objc/Method/-setCameraQuaternionFromX:y:z:w:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)setCameraQuaternionFromX:y:z:w:">-setCameraQuaternionFromX:y:z:w:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set quaternion of camera orientation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setCameraQuaternionFromX</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">x</span> <span class="nf">y</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">y</span> <span class="nf">z</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">z</span> <span class="nf">w</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">w</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setCameraQuaternionFromX</span><span class="p">(</span><span class="n">_</span> <span class="nv">x</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">z</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">w</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>x</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>X position.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>y</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Y position.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>z</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Z position.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>w</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Scalar value.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)setCameraOrientation:"></a>
+                    <a name="//apple_ref/objc/Method/-setCameraOrientation:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)setCameraOrientation:">-setCameraOrientation:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set camera orientation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setCameraOrientation</span><span class="p">:(</span><span class="n"><a href="../Enums/PlayerSDK360_CameraOrientation.html">PlayerSDK360_CameraOrientation</a></span><span class="p">)</span><span class="nv">orientation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setCameraOrientation</span><span class="p">(</span><span class="n">_</span> <span class="nv">orientation</span><span class="p">:</span> <span class="kt"><a href="../Enums/PlayerSDK360_CameraOrientation.html">PlayerSDK360_CameraOrientation</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>orientation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Camera orientation from enum #PlayerSDK360_CameraOrientation.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)minScale"></a>
+                    <a name="//apple_ref/objc/Method/-minScale" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)minScale">-minScale</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get minimum zoom of the camera.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">minScale</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">minScale</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Minimum zoom of the camera.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)maxScale"></a>
+                    <a name="//apple_ref/objc/Method/-maxScale" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)maxScale">-maxScale</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get Maximum zoom of camera.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">maxScale</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">maxScale</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Maximum zoom of camera.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)getScale"></a>
+                    <a name="//apple_ref/objc/Method/-getScale" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)getScale">-getScale</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get current zoom of the camera.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">getScale</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">getScale</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Current zoom of the camera.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)setScale:"></a>
+                    <a name="//apple_ref/objc/Method/-setScale:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)setScale:">-setScale:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set zoom value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setScale</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">scale</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setScale</span><span class="p">(</span><span class="n">_</span> <span class="nv">scale</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>scale</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Zoom value.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)scale:"></a>
+                    <a name="//apple_ref/objc/Method/-scale:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)scale:">-scale:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set scale factor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">scale</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">scaleFactor</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">scale</span><span class="p">(</span><span class="n">_</span> <span class="nv">scaleFactor</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>scaleFactor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Factor for zoom.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)setMinScale:maxScale:"></a>
+                    <a name="//apple_ref/objc/Method/-setMinScale:maxScale:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)setMinScale:maxScale:">-setMinScale:maxScale:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set minimum and maximum zoom of the camera.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setMinScale</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">minVal</span> <span class="nf">maxScale</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">maxVal</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setMinScale</span><span class="p">(</span><span class="n">_</span> <span class="nv">minVal</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="n">maxScale</span> <span class="nv">maxVal</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>minVal</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>New minimum zoom value of the camera.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maxVal</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>New maximum zoom value of the camera.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)drawerFPS"></a>
+                    <a name="//apple_ref/objc/Method/-drawerFPS" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)drawerFPS">-drawerFPS</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current fps.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">drawerFPS</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">drawerFPS</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Converion%20and%20sharing"></a>
+                <a name="//apple_ref/objc/Section/Converion and sharing" class="dashAnchor"></a>
+                <a href="#/Converion%20and%20sharing">
+                  <h3 class="section-name">Converion and sharing</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)convertToEquirectangular:quality:"></a>
+                    <a name="//apple_ref/objc/Method/-convertToEquirectangular:quality:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)convertToEquirectangular:quality:">-convertToEquirectangular:quality:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">convertToEquirectangular</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">inputUrl</span>
+                         <span class="nf">quality</span><span class="p">:(</span><span class="n"><a href="../Enums/PlayerSDK360_VideoQuality.html">PlayerSDK360_VideoQuality</a></span><span class="p">)</span><span class="nv">quality</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">convert</span><span class="p">(</span><span class="n">toEquirectangular</span> <span class="nv">inputUrl</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt"><a href="../Enums/PlayerSDK360_VideoQuality.html">PlayerSDK360_VideoQuality</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inputUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Url of source file.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>outputUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Output path.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)convertAndUploadVideoFromFileURL:videoQuality:socialShareInfo:"></a>
+                    <a name="//apple_ref/objc/Method/-convertAndUploadVideoFromFileURL:videoQuality:socialShareInfo:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)convertAndUploadVideoFromFileURL:videoQuality:socialShareInfo:">-convertAndUploadVideoFromFileURL:videoQuality:socialShareInfo:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Upload video file to Facebook, Youtube and VRideo (equirectangular = NO).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">convertAndUploadVideoFromFileURL</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">fileURL</span>
+                            <span class="nf">videoQuality</span><span class="p">:(</span><span class="n"><a href="../Enums/PlayerSDK360_VideoQuality.html">PlayerSDK360_VideoQuality</a></span><span class="p">)</span><span class="nv">videoQuality</span>
+                         <span class="nf">socialShareInfo</span><span class="p">:(</span><span class="n"><a href="../Classes/SocialShareInfo.html">SocialShareInfo</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">socialShareInfo</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">convertAndUploadVideo</span><span class="p">(</span><span class="n">fromFileURL</span> <span class="nv">fileURL</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">videoQuality</span><span class="p">:</span> <span class="kt"><a href="../Enums/PlayerSDK360_VideoQuality.html">PlayerSDK360_VideoQuality</a></span><span class="p">,</span> <span class="nv">socialShareInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/SocialShareInfo.html">SocialShareInfo</a></span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fileURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Local file url for upload.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>videoQuality</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Video quality (low, mediumm high).</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>socialShareInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Struct with information for share to social nets.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)convertAndUploadVideoFromFileURL:videoQuality:equirectangular:socialShareInfo:"></a>
+                    <a name="//apple_ref/objc/Method/-convertAndUploadVideoFromFileURL:videoQuality:equirectangular:socialShareInfo:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)convertAndUploadVideoFromFileURL:videoQuality:equirectangular:socialShareInfo:">-convertAndUploadVideoFromFileURL:videoQuality:equirectangular:socialShareInfo:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Upload video file to Facebook, Youtube and VRideo.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">convertAndUploadVideoFromFileURL</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">fileURL</span>
+                            <span class="nf">videoQuality</span><span class="p">:(</span><span class="n"><a href="../Enums/PlayerSDK360_VideoQuality.html">PlayerSDK360_VideoQuality</a></span><span class="p">)</span><span class="nv">videoQuality</span>
+                         <span class="nf">equirectangular</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">equirectangular</span>
+                         <span class="nf">socialShareInfo</span><span class="p">:(</span><span class="n"><a href="../Classes/SocialShareInfo.html">SocialShareInfo</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">socialShareInfo</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">convertAndUploadVideo</span><span class="p">(</span><span class="n">fromFileURL</span> <span class="nv">fileURL</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">videoQuality</span><span class="p">:</span> <span class="kt"><a href="../Enums/PlayerSDK360_VideoQuality.html">PlayerSDK360_VideoQuality</a></span><span class="p">,</span> <span class="nv">equirectangular</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">socialShareInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/SocialShareInfo.html">SocialShareInfo</a></span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fileURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Local file url for upload.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>videoQuality</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Video quality (low, mediumm high).</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>equirectangular</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>True if use equirectangular projection.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>socialShareInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Struct with information for share to social nets.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)shareVideoFromFileURL:socialShareInfo:"></a>
+                    <a name="//apple_ref/objc/Method/-shareVideoFromFileURL:socialShareInfo:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)shareVideoFromFileURL:socialShareInfo:">-shareVideoFromFileURL:socialShareInfo:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Share video file to Facebook and Youtube.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">shareVideoFromFileURL</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">fileURL</span>
+              <span class="nf">socialShareInfo</span><span class="p">:(</span><span class="n"><a href="../Classes/SocialShareInfo.html">SocialShareInfo</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">socialShareInfo</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">shareVideo</span><span class="p">(</span><span class="n">fromFileURL</span> <span class="nv">fileURL</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">socialShareInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/SocialShareInfo.html">SocialShareInfo</a></span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fileURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Local file url for upload.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>socialShareInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Struct with information for share to social nets.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)cancelSharing"></a>
+                    <a name="//apple_ref/objc/Method/-cancelSharing" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)cancelSharing">-cancelSharing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cancel share file to Facebook and Youtube.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">cancelSharing</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">cancelSharing</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Can&rsquo;t cancel this process or it&rsquo;s not running now.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/VR"></a>
+                <a name="//apple_ref/objc/Section/VR" class="dashAnchor"></a>
+                <a href="#/VR">
+                  <h3 class="section-name">VR</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)setVRMode:"></a>
+                    <a name="//apple_ref/objc/Method/-setVRMode:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)setVRMode:">-setVRMode:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setVRMode</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">value</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setVRMode</span><span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Output path.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Stitching"></a>
+                <a name="//apple_ref/objc/Section/Stitching" class="dashAnchor"></a>
+                <a href="#/Stitching">
+                  <h3 class="section-name">Stitching</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)PlayerSDK360_PlayerView(im)setDynStitchQuality:"></a>
+                    <a name="//apple_ref/objc/Method/-setDynStitchQuality:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)PlayerSDK360_PlayerView(im)setDynStitchQuality:">-setDynStitchQuality:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDynStitchQuality</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">quality</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setDynStitchQuality</span><span class="p">(</span><span class="n">_</span> <span class="nv">quality</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>quality</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Value (0..1).</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-12-02)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
